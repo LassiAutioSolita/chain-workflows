@@ -1,9 +1,7 @@
 name: First workflow in the chain
 
 on:
-  push:
-    branches:
-      - experiment/chain-workflows
+  workflow_dispatch
 
 jobs:
   build:
