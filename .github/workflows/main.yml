@@ -1,0 +1,13 @@
+name: Second workflow in the chain
+
+on:
+  workflow_run:
+    workflows: First workflow in the chain
+    types: completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo This is second workflow that is run after first workflow is completed
