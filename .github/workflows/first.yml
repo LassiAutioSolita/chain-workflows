@@ -1,0 +1,13 @@
+name: First workflow in the chain
+
+on:
+  push:
+    branches:
+      - experiment/chain-workflows
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: sleep 15
