@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo This is second workflow that is run after first workflow is completed
+    - run: echo Updated second
