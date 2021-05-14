@@ -1,0 +1,13 @@
+name: Trigger from webhook
+
+on:
+  repository_dispatch:
+    types:
+      - fake_click
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo Triggered from webhook
